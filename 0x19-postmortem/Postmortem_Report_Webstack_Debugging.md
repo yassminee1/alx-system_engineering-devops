@@ -5,6 +5,9 @@
 
 ### Incident report for [Web Application Service Degradation due to Load Balancer Misconfiguration](https://github.com/yassminee00/alx-system_engineering-devops/tree/master/0x12-web_stack_debugging_2)
 
+![web stack debugging](https://github.com/yassminee00/alx-system_engineering-devops/assets/142147424/ec12ba18-6a17-4486-98a8-747fc50e30a2)
+
+
 #### Issue Summary
 
 - **Duration:** - February 12, 2024, 5:00 AM - February 13, 2024, 6:00 PM (UTC)
