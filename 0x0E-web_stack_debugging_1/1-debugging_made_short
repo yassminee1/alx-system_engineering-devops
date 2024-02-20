@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
-# same as task 0 but -f added to ln to forcefully remove the file if it exists
+# Configures an Nginx server to listen on port 80.
+
+# creates a symbolic link (-s option) between the Nginx configuration file
+# and the enabled sites directory
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx restart
-rm /run/nginx.pid
+# restart nginx
+service nginx start
+# terminates the first nginx process ID
+kill "$(pgrep 'nginx' | head -1)"
