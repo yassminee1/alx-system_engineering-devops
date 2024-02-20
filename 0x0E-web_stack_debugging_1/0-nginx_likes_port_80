@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# debugging nginx port 80
+# Configures an Nginx server to listen on port 80.
 
-sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx restart
+#remove the default Nginx configuration file
+rm /etc/nginx/sites-enabled/default
+# Configure Nginx to lsten on port 80 for all active IPv4 IPs
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+# restart nginx
+service nginx restart
